@@ -28,4 +28,5 @@ class WorkoutsControllerTest < ActionDispatch::IntegrationTest
     workout.reload
     assert_equal "updated", workout.name
   end
+  
 end
