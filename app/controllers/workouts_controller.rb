@@ -20,6 +20,12 @@ class WorkoutsController < ApplicationController
   end
 
   def update
+    if @workout.update(workout_params)
+     redirect_to workouts_path
+     flash[:notice] = "You've updated your Workouts"
+   else
+     render 'new'
+   end
   end
 
   def destroy

@@ -24,7 +24,7 @@ class WorkoutsControllerTest < ActionDispatch::IntegrationTest
     workout = workouts(:one)
     patch workout_url(workout), params: { workout: {name: "updated"} }
 
-    assert_redirected_to workout_url(workout)
+    assert_redirected_to workouts_url
     workout.reload
     assert_equal "updated", workout.name
   end
