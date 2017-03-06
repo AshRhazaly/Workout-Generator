@@ -8,8 +8,8 @@ class WorkoutsController < ApplicationController
   end
 
   def create
-    # @workout = Workout.new(workout_params)
-    # @workout.save
+    @workout = Workout.new(workout_params)
+    @workout.save
   end
 
   def show
