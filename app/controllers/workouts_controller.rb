@@ -23,7 +23,7 @@ class WorkoutsController < ApplicationController
   end
 
   def destroy
-    # @workout.destroy
+    @workout.destroy
   end
 
   private
