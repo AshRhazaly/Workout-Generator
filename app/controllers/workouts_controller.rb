@@ -11,6 +11,7 @@ class WorkoutsController < ApplicationController
   def create
     @workout = Workout.new(workout_params)
     @workout.save
+    redirect_to workouts_path
   end
 
   def show

@@ -1,2 +1,8 @@
 <h1>Workouts#index</h1>
-<p>Find me in app/views/workouts/index.html.erb</p>
+<p>Name: it works!</p>
+
+<%= link_to "create new workout", new_workout_path %>
+
+<% @workout.each do |workout| %>
+  <%= workout.name %>
+<% end %>
