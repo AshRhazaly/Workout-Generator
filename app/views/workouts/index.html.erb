@@ -9,7 +9,7 @@
 <% @workout.each do |workout| %>
   <%= workout.name %>
   <%= workout.repetitions %>
-  <%= image_tag @workout.workout_image.thumb.url %>
+  <%= image_tag workout.workout_image.thumb.url %>
   <%= link_to "edit workout", edit_workout_path(workout) %>
   <%= link_to "delete workout", workout_path(workout), method: :delete %>
   <br />
