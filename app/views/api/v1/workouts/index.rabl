@@ -1,2 +1,2 @@
 collection @workout
-atrributes :title
+attribute :name

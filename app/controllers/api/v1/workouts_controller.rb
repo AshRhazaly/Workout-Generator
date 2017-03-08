@@ -2,6 +2,7 @@ class Api::V1::WorkoutsController < ApplicationController
   before_action :set_workout, only: [:show,:edit,:update,:destroy]
   def index
     @workout = Workout.all
+    # render 'index'
   end
 
   def new
