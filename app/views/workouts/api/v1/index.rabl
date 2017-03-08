@@ -1,0 +1,2 @@
+collection @workout
+atrributes :title
