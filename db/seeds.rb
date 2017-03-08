@@ -7,6 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 workouts = Workout.create([{ name: 'Jumping Jacks' }, { name: 'Normal Push Ups' }, {name: 'Crunches'},
-                          {name: 'Mountain Climbers'}, {name: 'WideGrip Push Ups'}, {name: 'Reverse Crunches'}
+                          {name: 'Mountain Climbers'}, {name: 'WideGrip Push Ups'}, {name: 'Reverse Crunches'},
                           {name: "Hip Thrusters"}, {name: "CloseGrip Push Ups"}, {name: "JackKnife"},
                           {name: "Plank"}])
