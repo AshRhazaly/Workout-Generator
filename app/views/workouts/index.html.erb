@@ -1,16 +1,33 @@
+<main class="container">
+  <br>
+  <br>
+  <%= link_to "Create a new workout", new_workout_path, class: "btn btn-success" %>
+  <br>
+  <br>
+  <%= link_to "GET YOUR API token" , api_token_user_path(current_user), class: "btn btn-default" %>
+  <br>
+  <br>
 
 
-<br />
-<br />
-<%= link_to "create new workout", new_workout_path %>
-<br />
-<br />
+  <section class="container workout-container">
+  <% @workout.each do |workout| %>
+    <section class="container workout-header">
+    <%= workout.name %>
+  </section>
+  <section class="container workout-repetitions">
+    <%= workout.repetitions %>
+  </section>
+    <br>
+    <section class="container workout-image">
+    <%= image_tag workout.workout_image.thumb.url %>
+  </section>
+    <br>
+    <footer class="container workout-link">
+    <%= link_to "edit workout", edit_workout_path(workout) %>
+    <%= link_to "delete workout", workout_path(workout), method: :delete %>
+    <br />
+  </footer>
+  <% end %>
 
-<% @workout.each do |workout| %>
-  <%= workout.name %>
-  <%= workout.repetitions %>
-  <%= image_tag workout.workout_image.thumb.url %>
-  <%= link_to "edit workout", edit_workout_path(workout) %>
-  <%= link_to "delete workout", workout_path(workout), method: :delete %>
-  <br />
-<% end %>
+</section>
+</main>

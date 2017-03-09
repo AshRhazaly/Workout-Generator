@@ -3,7 +3,6 @@
   <head>
     <title>WorkoutGenerator</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -11,9 +10,8 @@
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <%= link_to "Log Out" , destroy_user_session_path(current_user), method: :delete %>
+    <%= link_to "Log Out" , destroy_user_session_path(current_user), method: :delete , class: "btn btn-danger"%> <br>
     <% if user_signed_in? %>
-      <%= link_to "GET YOUR API token" , api_token_user_path(current_user) %>
     <% end %>
     <%= yield %>
   </body>
