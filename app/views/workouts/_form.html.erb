@@ -1,13 +1,21 @@
-<%= form_for @workout do |f| %>
-  <%= f.label :name%>
-  <%= f.text_field :name %>
+<br />
+<br />
+<br />
+<section class="container workout-form">
+  <%= form_for @workout, class: "form-group" do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, class: "form-control workout-name" %>
   <br />
   <%= f.label :repetitions%>
-  <%= f.number_field :repetitions %>
+  <%= f.number_field :repetitions, class: "form-control workout-rep" %>
   <br />
   <%= f.label :image%>
-  <%= f.file_field :workout_image %>
+  <%= f.file_field :workout_image%>
   <br />
-  <%= f.submit 'Save'%>
+  <%= f.submit 'Save', class: "btn btn-success"%>
+  <br />
+  <br />
+  <%= button_to "Go Back", workouts_path, class: "btn btn-primary" %>
 
-<% end %>
+  <% end %>
+</section>

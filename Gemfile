@@ -12,6 +12,9 @@ gem 'carrierwave'
 gem 'rails-controller-testing'
 gem 'rabl'
 gem 'devise'
+gem 'bootstrap-sass'
+gem 'autoprefixer-rails'
+
 # Also add either `oj` or `yajl-ruby` as the JSON parser
 gem 'oj'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
