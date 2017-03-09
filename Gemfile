@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'bootstrap-sass', '~> 3.3.6'
 gem "mini_magick"
 #image upload carrierwave
 gem 'carrierwave'
@@ -12,7 +13,6 @@ gem 'carrierwave'
 gem 'rails-controller-testing'
 gem 'rabl'
 gem 'devise'
-gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 
 # Also add either `oj` or `yajl-ruby` as the JSON parser
